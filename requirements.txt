@@ -1,12 +1,45 @@
-fastapi
-uvicorn
-SQLAlchemy
-pydantic
-passlib[bcrypt]
-python-jose
-python-multipart
-pytest
-httpx
-Flask
-requests
-pytest-cov
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Database
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.12.1
+
+# Security
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+cryptography==41.0.7
+bcrypt==4.1.2
+
+# Validation and Serialization
+pydantic[email]==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP Client
+httpx==0.25.2
+requests==2.31.0
+
+# Development and Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1
+
+# Environment and Configuration
+python-dotenv==1.0.0
+
+# Logging and Monitoring
+loguru==0.7.2
+
+# Rate Limiting
+slowapi==0.1.9
+
+# CORS and Security
+flask-cors==4.0.0
+
+# Production Server
+gunicorn==21.2.0
